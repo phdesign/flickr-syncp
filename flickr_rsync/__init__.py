@@ -13,6 +13,9 @@ from fake_storage import FakeStorage
 from tree_walker import TreeWalker
 from csv_walker import CsvWalker
 
+reload(sys)
+sys.setdefaultencoding('utf8')
+
 logger = logging.getLogger(__name__)
 
 def _get_storage(config, path):
